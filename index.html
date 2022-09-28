@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body{
+            margin:0px
+        
+        }
+        .navbar1{
+         border:0px solid blue;
+        height:40px;
+        display:flex;
+        justify-content: space-between;
+        background-color: black;
+        }
+        .image1{
+            border: 0px solid red;
+          background-color: black;
+        }
+       .image1>img{
+        height:40px;
+        padding-left: 150px;
+        cursor: pointer;
+       }
+       .image1+div{
+        border:0px solid green;
+        background-color: black;
+        color: white;
+        
+       }
+       .image1+div>p{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+       align-items: center;
+       font-size: 14px;
+       cursor: pointer;
+       }
+       .image2{
+            border: 0px solid red;
+          background-color: black;
+          text-align: center;
+          cursor: pointer;
+        }
+       .image2>img{
+        height:40px;
+        padding-left: 40px;
+       }
+       .image2+div{
+        border:0px solid green;
+        background-color: black;
+        color: white;
+        
+       }
+       .image2+div>p{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+       align-items: center;
+       font-size: 14px;
+       cursor: pointer;
+       }
+       .image3{
+            border: 0px solid red;
+          background-color: black;
+          text-align: center;
+          cursor: pointer;
+        }
+       .image3>img{
+        height:40px;
+        padding-left: 40px;
+       }
+       .image3+div{
+        border:0px solid green;
+        background-color: black;
+        color: white;
+        
+       }
+       .image3+div>p{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+       align-items: center;
+       font-size: 14px;
+       cursor: pointer;
+       }
+       .left{
+        border:0px solid blue;
+        display: flex;
+       }
+       .right{
+        border:0px solid teal;
+        display: flex;
+        margin-right: 100px;
+       }
+       .right1{
+        border:1px solid grey;
+        padding-right: 10px;
+        background-color: black;
+        color: white;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-left: 0px;
+        cursor: pointer;
+       }
+       .right2{
+        border:1px solid grey;
+        padding-right: 10px;
+        background-color: black;
+        color: white;
+        padding-left: 10px;
+        border-top: 0px;
+        border-bottom: 0px;
+        cursor: pointer;
+       }
+       .right3{
+        border:1px solid grey;
+        padding-right: 10px;
+        background-color: black;
+        color: white;
+        padding-left: 10px;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-right: 0px;
+        cursor: pointer;
+       }
+      .navbar2{
+        border:0px solid green;
+        height:60px;
+        display: flex;
+        background-color: rgb(247,248,247);
+        width:90%;
+        margin-left: 120px;
+      }
+      .navbar2>div>img{
+        border:5px solid pink;
+        height:60px;
+       width:100%
+        
+      }
+      .navbar2>div:nth-child(2){
+        border: 0px solid blue;
+        display:flex;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      .navbar2>div:nth-child(3){
+        border: 0px solid blue;
+        display:flex;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      .navbar2>div:nth-child(4){
+        border: 0px solid blue;
+        display:flex;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      .navbar2>div:nth-child(5){
+        border: 0px solid blue;
+        display:flex;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      .navbar2>div:nth-child(6){
+        border: 0px solid blue;
+        display:flex;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      .navbar2>div:nth-child(7){
+        border:0px solid rgb(55, 81, 28);
+        width:29%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        background-color: rgb(236,237,235);
+        padding-left: 10px;
+        height:40px;
+        margin-top: 10px;
+      }
+      .navbar2>div:nth-child(7)>input{
+        width:100%;
+        height:70%
+      }
+      .navbar2>div:nth-child(8){
+        border: 0px solid blue;
+        display:flex;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      .navbar2>div:nth-child(9){
+        border: 0px solid blue;
+        display:flex;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+      }
+      .img2{
+        border:0px solid blueviolet
+      }
+      .img3{
+        border:1px solid orange;
+        width:2%;
+        height:15px
+      }
+     /* .img3>img{
+        width:50%;
+        height:30px
+     } */
+      .navbar3{
+        border:1px solid orange;
+        text-align: center;
+        background-color: orange;
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 45px;
+      }
+      input{
+      border: none;
+      background-color: rgb(236,237,235);
+      padding-left: 10px;
+      }
+     
+    </style>
+</head>
+<body>
+    <div class="navbar1">
+        <div class="left">
+    <div class="image1">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi8bC78lTdeQAam5f6HhFDnvjf_LPmeHlDL819hBpIwdAR2Eih">
+    </div>
+    <div>
+        <p>Free Shipping</p>
+    </div>
+    <div class="image2">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCRoszPSR-9fVXqKNDRTwUMWkPT907Rn2Kers7PwdPDkco6frh">
+    </div>
+    <div>
+        <p>Click & Collect</p>
+    </div>
+    <div class="image3">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCRoszPSR-9fVXqKNDRTwUMWkPT907Rn2Kers7PwdPDkco6frh">
+    </div>
+    <div>
+        <p>Return To Store</p>
+    </div>
+    </div>
+    <div class="right">
+    <div class="right1">
+        <p>Download Our Apps </p>
+    </div>
+    <div class="right2">
+        <p>Store Locator</p>
+    </div>
+    <div class="right3">
+        <p>Help</p>
+    </div>
+    </div>
+</div>
+<div class="navbar2">
+    <div class="img1" >
+        <img src="https://t2.gstatic.com/images?q=tbn:ANd9GcQb01DUSlgI19L1OP0eYpYefx09nIgHzWjTFjnR8EfxfIgYIex9">
+    </div>
+    <div >
+        <p>Women</p>
+    </div>
+    <div>
+        <p>Men</p>
+    </div>
+    <div>
+        <p>Kids</p>
+    </div>
+    <div>
+        <p>Shoes & Bags</p>
+    </div>
+    <div>
+        <p>Beauty</p>
+    </div>
+    <div class="input">
+        <i class="fa fa-search"></i>
+        <input type="search" placeholder="What are you looking for?" >
+    </div>
+    <div>
+        <p>More</p>
+    </div>
+    <div>
+        <p>Sign Up/Sign In</p>
+    </div>
+    <div class="img2">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYCl0paHiNinOWR3ov_ekjgUOrGtZ2gUogqZZOis-ViNCW-vWl">
+    </div>
+    <div class="img3">
+        <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHR1JJAS7qaYUOuogWXz5Ehgqp_E8OwTApcKithGXUuuNySq1b">
+    </div>
+</div>
+<div class="navbar3">
+<p>Buy 1 Get 1 Free on Best of Brands ></p>
+</div>
+</body>
+</html>
