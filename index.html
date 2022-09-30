@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="C:\Users\User\Desktop\Project 1\style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+</head>    
     <style>
         body{
             margin:0px
@@ -105,6 +110,10 @@
         border-bottom: 0px;
         border-left: 0px;
         cursor: pointer;
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      margin-bottom: 8px;
        }
        .right2{
         border:1px solid grey;
@@ -115,6 +124,10 @@
         border-top: 0px;
         border-bottom: 0px;
         cursor: pointer;
+        display: flex;
+      align-items: center;
+      margin-top: 8px;
+      margin-bottom: 8px;
        }
        .right3{
         border:1px solid grey;
@@ -126,19 +139,40 @@
         border-bottom: 0px;
         border-right: 0px;
         cursor: pointer;
+        display: flex;
+      align-items: center;
+      margin-top: 8px;
+      margin-bottom: 8px;
        }
       .navbar2{
         border:0px solid green;
         height:60px;
         display: flex;
         background-color: rgb(247,248,247);
-        width:90%;
-        margin-left: 120px;
+       width:100%;
+       padding-left: 120px;
+       position: fixed;
+       
       }
-      .navbar2>div>img{
-        border:5px solid pink;
+      .img1>img{
+        border:0px solid pink;
+       width:100%;
+       height:60px;
+      
+      }
+      .img2>img{
+        border:0px solid rgb(217, 13, 47);
         height:60px;
-       width:100%
+       width:90%;
+       
+       
+      }
+      .img3>img{
+        border:0px solid rgb(44, 6, 158);
+        height:15px;
+       width:65%;
+        margin-top: 20px;
+        margin-left: 30px;
         
       }
       .navbar2>div:nth-child(2){
@@ -188,7 +222,7 @@
       }
       .navbar2>div:nth-child(7){
         border:0px solid rgb(55, 81, 28);
-        width:29%;
+        width:32%;
         display:flex;
         justify-content: center;
         align-items: center;
@@ -213,26 +247,28 @@
         font-size: 14px;
       }
       .navbar2>div:nth-child(9){
-        border: 0px solid blue;
+        border: 1px solid grey;
         display:flex;
         align-items: center;
         padding-left: 15px;
         padding-right: 15px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-right: 0px;
       }
       .img2{
         border:0px solid blueviolet
       }
       .img3{
-        border:1px solid orange;
+        border:0px solid orange;
         width:2%;
         height:15px
       }
-     /* .img3>img{
-        width:50%;
-        height:30px
-     } */
+    
       .navbar3{
         border:1px solid orange;
         text-align: center;
@@ -240,17 +276,350 @@
         color:white;
         font-family: Arial, Helvetica, sans-serif;
         height: 45px;
+        margin-top: 60px;
       }
       input{
       border: none;
       background-color: rgb(236,237,235);
       padding-left: 10px;
       }
-     
+     .container{
+        border: 2px solid blue;
+        height: 490px;
+        margin-top: 30px;
+        width:80%;
+        margin: auto;
+     }
+    .container+p{
+        border: 0px solid brown;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 36px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .value-picks{
+        border: 0px solid red;
+        height: 200px;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 15px;
+    }
+    .value-picks>div{
+        border: 0px solid green;
+        border-radius: 10px;
+       
+    }
+    .value-picks>div>img{
+        width: 100%;
+    }
+    .value-picks>div>p{
+       text-align: center;
+       font-weight:bolder;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    .value-picks+p{
+        border: 0px solid rgb(215, 14, 47);
+        font-size: 36px;
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .Big{
+        border: 0px solid black;
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,250px);
+        gap:20px ;
+        
+    }
+    .Big>div{
+        border: 0px solid blue; 
+    }
+    .Big>div>img{
+        border: 0px solid green;
+        width:100%
+    }
+    .Big>div>p{
+        border: 0px solid brown;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+    }
+    .rectangle1{
+        border: 0px solid blue;
+        height:auto;
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .rectangle2{
+        border: 0px solid blue;
+        height:auto;
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .rectangle3{
+        border: 0px solid blue;
+        height:auto;
+        width: 80%;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .rectangle3+p{
+        border: 0px solid blue;
+        font-weight: 18px;
+        font-size: 36px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .Shop{
+        border: 0px solid black;
+        margin-top: 20px;
+        height:auto;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,250px);
+        gap:20px;
+       
+    }
+    .Shop>div{
+        border: 0px solid teal;
+       
+    }
+    .Shop>div>img{
+        width:100%
+    }
+    .Shop>div>p{
+        border: 0px solid brown;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+    }
+    .Shop+p{
+        border: 0px solid cyan;
+        width: 80%;
+        margin: auto;
+        font-size: 36px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .Category{
+        border: 0px solid black;
+        margin-top: 20px;
+        height:auto;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,250px);
+        gap:20px;
+       
+    }
+    .Category>div{
+        border: 0px solid teal;
+       
+    }
+    .Category>div>img{
+        width:100%
+    }
+    .Category>div>p{
+        border: 0px solid brown;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+    }
+   .Category+p{
+    border: 0px solid green;
+    width: 80%;
+    margin: auto;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .flash{
+    border: 0px solid pink;
+    height:400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+   }
+   .flash+p{
+    border: 0px solid blue;
+    width: 80%;
+    margin: auto;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .top-picks{
+    border: 0px solid teal;
+    height:400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px
+   }
+   .top-picks>img{
+    border: 0px solid black;
+    width: 100%;
+   }
+   .middle{
+    border: 0px solid blue;
+    width:80%;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+   }
+   .middle+p{
+    border: 0px solid green;
+    width: 80%;
+    margin: auto;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+   }
+   .most-loved{
+    border: 0px solid teal;
+    height:400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px
+   }
+   .most-loved>img{
+    border: 0px solid black;
+    width: 100%;
+   }
+   .most-loved+p{
+    border: 0px solid green;
+    width: 80%;
+    margin: auto;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+   }
+   .new-cool{
+    border: 0px solid teal;
+    height:400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px
+   }
+   .new-cool>img{
+    border: 0px solid black;
+    width: 100%;
+   }
+   .new-cool+p{
+    border: 0px solid green;
+    width: 80%;
+    margin: auto;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+   }
+   .highlights{
+    border: 0px solid teal;
+    height:400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px
+   }
+   .highlights>img{
+    border: 0px solid black;
+    width: 100%;
+   }
+   .highlights+p{
+    border: 0px solid green;
+    width: 80%;
+    margin: auto;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+   }
+   .trend{
+    border: 0px solid teal;
+    height:400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px
+   }
+   .trend>img{
+    border: 0px solid black;
+    width: 100%;
+   }
+   .trend+p{
+    border: 0px solid green;
+    width: 80%;
+    margin: auto;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+   }
+   .ward{
+    border: 0px solid teal;
+    height:400px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px
+   }
+   .ward>img{
+    border: 0px solid black;
+    width: 100%;
+   }
+   .ward+p{
+    border: 0px solid green;
+    width: 80%;
+    margin: auto;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+   }
+   .swiper-wrapper{
+    border: 1px solid red;
+    width: 80%;
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:20px
+   }
+  
+  .swiper-slide>img{
+    width:100%
+  }
     </style>
 </head>
 <body>
-    <div class="navbar1">
+<div class="navbar1">
         <div class="left">
     <div class="image1">
         <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRi8bC78lTdeQAam5f6HhFDnvjf_LPmeHlDL819hBpIwdAR2Eih">
@@ -322,5 +691,311 @@
 <div class="navbar3">
 <p>Buy 1 Get 1 Free on Best of Brands ></p>
 </div>
+<div class="container"></div>
+<p>Value Picks</p>
+<div class="value-picks">
+   <div>
+    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner6-28Sep2022.jpg" alt="">
+    <p>Under $699</p>
+   </div>
+   <div>
+    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner6-28Sep2022.jpg" alt="">
+    <p>Under $699</p>
+   </div>
+   <div>
+    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner6-28Sep2022.jpg" alt="">
+    <p>Under $699</p>
+   </div>
+   <div>
+    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner6-28Sep2022.jpg" alt="">
+    <p>Under $699</p>
+   </div>
+   <div>
+    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner6-28Sep2022.jpg" alt="">
+    <p>Under $699</p>
+   </div>
+   <div>
+    <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC3-Men-banner6-28Sep2022.jpg" alt="">
+    <p>Under $699</p>
+   </div>
+</div>
+<p>Big Brands. Big Discounts</p>
+<div class="Big">
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC5-Banner10-men-Desktop-16Sep2022.jpg" alt="">
+        <p>Upto 40% Off</p>
+    </div>
+    
+</div>
+<div class="rectangle1">
+<img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-A-menstripbanner-02Sep2022A.jpg">
+</div>
+<div class="rectangle2">
+    <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-men-9modblock-StripBanner2-D-26Sep2022.jpg">
+</div>
+<div class="rectangle3">
+    <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-men-8modblock-oneBythree-D-29Sep2022.jpg">
+</div>
+<p>Shop By Category</p>
+<div class="Shop">
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-10-Desktop-Men-24Aug2022.jpg" alt="">
+        <p>From $199</p>
+    </div>
+</div>
+<p>Top Trending Brands</p>
+<div class="Category">
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>fUp to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+    <div>
+        <img src="https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC1-Men-categorybanner9-16Sep2022.jpg" alt="">
+        <p>Up to 30% Off</p>
+    </div>
+</div>
+<p>Flash Sale for Today</p>
+<div class="flash">
+    <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-modularblock7-oneBythree-A-Men-27Sep2022.gif">
+</div>
+<p>Top Picks</p>
+<div class="top-picks">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-1-oneBythree-21June2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-2-oneBythree-21June2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modularblock-3-oneBythree-21June2022.jpg" alt="">
+</div>
+<div class="middle">
+    <img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-12modblock-oneBythree-A-Men-27Sep2022.jpg">
+</div>
+<p>Most Loved Styles</p>
+<div class="most-loved">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modblck-1-oneBythreeA-07Sep2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modblck-2-oneBythreeA-24June20221.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-3modblck-3-oneBythreeA-24June2022.jpg" alt="">
+</div>
+<p>New, Cool & Trendy</p>
+<div class="new-cool">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-11modularblock-oneBythree-A-Men-09Sep2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-11modularblock-oneBythree-B-Men-09Sep2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-11modularblock-oneBythree-C-Men-16Sept2022.gif" alt="">
+</div>
+<p>Highlights of the Day</p>
+<div class="highlights">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-4modularblock-1-oneBythree-24June2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-4modularblock-2-oneBythree-19July2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-4modularblock-3-oneBythree-24June2022.gif" alt="">
+</div>
+<p>Trendsetters</p>
+<div class="trend">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-2modularblock-1-oneBythree-16Sep2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-2modularblock-2-oneBythree-16Sep2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-2modularblock-3-oneBythree-16Sep2022.jpg" alt="">
+</div>
+<p>Active Wardrobe</p>
+<div class="ward">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-15modularblock-1-oneBythree-16Sep2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-15modularblock-2-oneBythree-16Sep2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Men-15modularblock-3-oneBythree-16Sep2022.jpg" alt="">
+</div>
+<p>Deal Corner</p>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011402353_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396261_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007737057_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009728206_01-2100.jpg">
+
+ <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+
+</div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
+</div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      slidesPerGroup: 5,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
