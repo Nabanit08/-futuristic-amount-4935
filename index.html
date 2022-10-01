@@ -12,611 +12,7 @@
     <link rel="stylesheet" href="C:\Users\User\Desktop\Project 1\style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>    
-    <style>
-        body{
-            margin:0px
-        
-        }
-        .navbar1{
-         border:0px solid blue;
-        height:40px;
-        display:flex;
-        justify-content: space-between;
-        background-color: black;
-        }
-        .image1{
-            border: 0px solid red;
-          background-color: black;
-        }
-       .image1>img{
-        height:40px;
-        padding-left: 150px;
-        cursor: pointer;
-       }
-       .image1+div{
-        border:0px solid green;
-        background-color: black;
-        color: white;
-        
-       }
-       .image1+div>p{
-        font-family: Arial, Helvetica, sans-serif;
-        display: flex;
-       align-items: center;
-       font-size: 14px;
-       cursor: pointer;
-       }
-       .image2{
-            border: 0px solid red;
-          background-color: black;
-          text-align: center;
-          cursor: pointer;
-        }
-       .image2>img{
-        height:40px;
-        padding-left: 40px;
-       }
-       .image2+div{
-        border:0px solid green;
-        background-color: black;
-        color: white;
-        
-       }
-       .image2+div>p{
-        font-family: Arial, Helvetica, sans-serif;
-        display: flex;
-       align-items: center;
-       font-size: 14px;
-       cursor: pointer;
-       }
-       .image3{
-            border: 0px solid red;
-          background-color: black;
-          text-align: center;
-          cursor: pointer;
-        }
-       .image3>img{
-        height:40px;
-        padding-left: 40px;
-       }
-       .image3+div{
-        border:0px solid green;
-        background-color: black;
-        color: white;
-        
-       }
-       .image3+div>p{
-        font-family: Arial, Helvetica, sans-serif;
-        display: flex;
-       align-items: center;
-       font-size: 14px;
-       cursor: pointer;
-       }
-       .left{
-        border:0px solid blue;
-        display: flex;
-       }
-       .right{
-        border:0px solid teal;
-        display: flex;
-        margin-right: 100px;
-       }
-       .right1{
-        border:1px solid grey;
-        padding-right: 10px;
-        background-color: black;
-        color: white;
-        border-top: 0px;
-        border-bottom: 0px;
-        border-left: 0px;
-        cursor: pointer;
-      display: flex;
-      align-items: center;
-      margin-top: 8px;
-      margin-bottom: 8px;
-       }
-       .right2{
-        border:1px solid grey;
-        padding-right: 10px;
-        background-color: black;
-        color: white;
-        padding-left: 10px;
-        border-top: 0px;
-        border-bottom: 0px;
-        cursor: pointer;
-        display: flex;
-      align-items: center;
-      margin-top: 8px;
-      margin-bottom: 8px;
-       }
-       .right3{
-        border:1px solid grey;
-        padding-right: 10px;
-        background-color: black;
-        color: white;
-        padding-left: 10px;
-        border-top: 0px;
-        border-bottom: 0px;
-        border-right: 0px;
-        cursor: pointer;
-        display: flex;
-      align-items: center;
-      margin-top: 8px;
-      margin-bottom: 8px;
-       }
-      .navbar2{
-        border:0px solid green;
-        height:60px;
-        display: flex;
-        background-color: rgb(247,248,247);
-       width:100%;
-       padding-left: 120px;
-       position: fixed;
-       
-      }
-      .img1>img{
-        border:0px solid pink;
-       width:100%;
-       height:60px;
-      
-      }
-      .img2>img{
-        border:0px solid rgb(217, 13, 47);
-        height:60px;
-       width:90%;
-       
-       
-      }
-      .img3>img{
-        border:0px solid rgb(44, 6, 158);
-        height:15px;
-       width:65%;
-        margin-top: 20px;
-        margin-left: 30px;
-        
-      }
-      .navbar2>div:nth-child(2){
-        border: 0px solid blue;
-        display:flex;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-      }
-      .navbar2>div:nth-child(3){
-        border: 0px solid blue;
-        display:flex;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-      }
-      .navbar2>div:nth-child(4){
-        border: 0px solid blue;
-        display:flex;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-      }
-      .navbar2>div:nth-child(5){
-        border: 0px solid blue;
-        display:flex;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-      }
-      .navbar2>div:nth-child(6){
-        border: 0px solid blue;
-        display:flex;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-      }
-      .navbar2>div:nth-child(7){
-        border:0px solid rgb(55, 81, 28);
-        width:32%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        background-color: rgb(236,237,235);
-        padding-left: 10px;
-        height:40px;
-        margin-top: 10px;
-      }
-      .navbar2>div:nth-child(7)>input{
-        width:100%;
-        height:70%
-      }
-      .navbar2>div:nth-child(8){
-        border: 0px solid blue;
-        display:flex;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-      }
-      .navbar2>div:nth-child(9){
-        border: 1px solid grey;
-        display:flex;
-        align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        border-top: 0px;
-        border-bottom: 0px;
-        border-right: 0px;
-      }
-      .img2{
-        border:0px solid blueviolet
-      }
-      .img3{
-        border:0px solid orange;
-        width:2%;
-        height:15px
-      }
-    
-      .navbar3{
-        border:1px solid orange;
-        text-align: center;
-        background-color: orange;
-        color:white;
-        font-family: Arial, Helvetica, sans-serif;
-        height: 45px;
-        margin-top: 60px;
-      }
-      input{
-      border: none;
-      background-color: rgb(236,237,235);
-      padding-left: 10px;
-      }
-     .container{
-        border: 2px solid blue;
-        height: 490px;
-        margin-top: 30px;
-        width:80%;
-        margin: auto;
-     }
-    .container+p{
-        border: 0px solid brown;
-        width: 80%;
-        margin: auto;
-        margin-top: 20px;
-        font-size: 36px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .value-picks{
-        border: 0px solid red;
-        height: 200px;
-        width: 80%;
-        margin: auto;
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        gap: 15px;
-    }
-    .value-picks>div{
-        border: 0px solid green;
-        border-radius: 10px;
-       
-    }
-    .value-picks>div>img{
-        width: 100%;
-    }
-    .value-picks>div>p{
-       text-align: center;
-       font-weight:bolder;
-       font-family: Arial, Helvetica, sans-serif;
-    }
-    .value-picks+p{
-        border: 0px solid rgb(215, 14, 47);
-        font-size: 36px;
-        width: 80%;
-        margin: auto;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .Big{
-        border: 0px solid black;
-        width: 80%;
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat(2,250px);
-        gap:20px ;
-        
-    }
-    .Big>div{
-        border: 0px solid blue; 
-    }
-    .Big>div>img{
-        border: 0px solid green;
-        width:100%
-    }
-    .Big>div>p{
-        border: 0px solid brown;
-      text-align: center;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bolder;
-    }
-    .rectangle1{
-        border: 0px solid blue;
-        height:auto;
-        width: 80%;
-        margin: auto;
-        margin-top: 100px;
-    }
-    .rectangle2{
-        border: 0px solid blue;
-        height:auto;
-        width: 80%;
-        margin: auto;
-        margin-top: 100px;
-    }
-    .rectangle3{
-        border: 0px solid blue;
-        height:auto;
-        width: 80%;
-        margin: auto;
-        margin-top: 100px;
-    }
-    .rectangle3+p{
-        border: 0px solid blue;
-        font-weight: 18px;
-        font-size: 36px;
-        font-family: Arial, Helvetica, sans-serif;
-        width: 80%;
-        margin: auto;
-        margin-top: 20px;
-    }
-    .Shop{
-        border: 0px solid black;
-        margin-top: 20px;
-        height:auto;
-        width: 80%;
-        margin: auto;
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat(2,250px);
-        gap:20px;
-       
-    }
-    .Shop>div{
-        border: 0px solid teal;
-       
-    }
-    .Shop>div>img{
-        width:100%
-    }
-    .Shop>div>p{
-        border: 0px solid brown;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 10px;
-    }
-    .Shop+p{
-        border: 0px solid cyan;
-        width: 80%;
-        margin: auto;
-        font-size: 36px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .Category{
-        border: 0px solid black;
-        margin-top: 20px;
-        height:auto;
-        width: 80%;
-        margin: auto;
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat(2,250px);
-        gap:20px;
-       
-    }
-    .Category>div{
-        border: 0px solid teal;
-       
-    }
-    .Category>div>img{
-        width:100%
-    }
-    .Category>div>p{
-        border: 0px solid brown;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 10px;
-    }
-   .Category+p{
-    border: 0px solid green;
-    width: 80%;
-    margin: auto;
-    font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
-   }
-   .flash{
-    border: 0px solid pink;
-    height:400px;
-    width: 80%;
-    margin: auto;
-    margin-top: 40px;
-   }
-   .flash+p{
-    border: 0px solid blue;
-    width: 80%;
-    margin: auto;
-    font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
-   }
-   .top-picks{
-    border: 0px solid teal;
-    height:400px;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px
-   }
-   .top-picks>img{
-    border: 0px solid black;
-    width: 100%;
-   }
-   .middle{
-    border: 0px solid blue;
-    width:80%;
-    margin: auto;
-    margin-top: 20px;
-    height: auto;
-   }
-   .middle+p{
-    border: 0px solid green;
-    width: 80%;
-    margin: auto;
-    font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-   }
-   .most-loved{
-    border: 0px solid teal;
-    height:400px;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px
-   }
-   .most-loved>img{
-    border: 0px solid black;
-    width: 100%;
-   }
-   .most-loved+p{
-    border: 0px solid green;
-    width: 80%;
-    margin: auto;
-    font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-   }
-   .new-cool{
-    border: 0px solid teal;
-    height:400px;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px
-   }
-   .new-cool>img{
-    border: 0px solid black;
-    width: 100%;
-   }
-   .new-cool+p{
-    border: 0px solid green;
-    width: 80%;
-    margin: auto;
-    font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-   }
-   .highlights{
-    border: 0px solid teal;
-    height:400px;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px
-   }
-   .highlights>img{
-    border: 0px solid black;
-    width: 100%;
-   }
-   .highlights+p{
-    border: 0px solid green;
-    width: 80%;
-    margin: auto;
-    font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-   }
-   .trend{
-    border: 0px solid teal;
-    height:400px;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px
-   }
-   .trend>img{
-    border: 0px solid black;
-    width: 100%;
-   }
-   .trend+p{
-    border: 0px solid green;
-    width: 80%;
-    margin: auto;
-    font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-   }
-   .ward{
-    border: 0px solid teal;
-    height:400px;
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px
-   }
-   .ward>img{
-    border: 0px solid black;
-    width: 100%;
-   }
-   .ward+p{
-    border: 0px solid green;
-    width: 80%;
-    margin: auto;
-    font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 50px;
-   }
-   .swiper-wrapper{
-    border: 1px solid red;
-    width: 80%;
-    height: 300px;
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap:20px
-   }
-  
-  .swiper-slide>img{
-    width:100%
-  }
-    </style>
+   
 </head>
 <body>
 <div class="navbar1">
@@ -997,5 +393,134 @@
       },
     });
   </script>
+  <div class="but"><p>SEE ALL</p></div>
+ 
+  
+    <p>Most loved brands</p>
+ <div class="more">
+    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-5modularblock-oneBytwo1C-Men-14July2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-5modularblock-oneBytwo1D-Men-14July2022.jpg" alt="">
+ </div>
+  <p>Essentials For You</p>
+  <div class="essential">
+    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-10modularblock-oneBythree-A-Men-12Sept2022.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=616,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-LS-MEN-10modularblock-oneBythree-B-Men-06Mar2022.jpg" alt="">
+  </div>
+  <p>Trending Watches</p>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011402353_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396261_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000007737057_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009728206_01-2100.jpg">
+
+ <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+<div class="swiper-slide">
+    <img src="https://lmsin.net/cdn-cgi/image/h=444,w=444,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000008396243_01-2100.jpg">
+    <h2>$10,396</h2>
+</div>
+
+</div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
+</div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      slidesPerGroup: 5,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <div class="but"><p>SEE ALL</p></div>
+  <p>Shop By Department</p>
+  <div class="dept">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-6modularblock-oneBythree-A-Men-04March2022A.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-6modularblock-oneBythree-B-Men-04March2022A.jpg" alt="">
+    <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-MEN-6modularblock-oneBythree-C-Men-04March2022A.jpg" alt="">
+  </div>
+  <div class="bottom1">
+    <div>
+        <h2>Subscribe to our awesome emails.</h2>
+        <p>Get our latest offers and news straight in your inbox.</p>
+        <input type="email" placeholder="Please enter an email address">
+        <button>Subscribe</button>
+    </div>
+    <div>
+        <h2>Download our apps</h2>
+        <p>Shop our products and offers on-the-go.</p>
+        <div class="two-image">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMe59kvVdsCE3-XNBbbVEqYD0-BAa4QQLsqTDW8M0sUhDvu1sU" alt="">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeOhzuRqx8nOSg5nn6-zgQpJjQ7GTramuw2gRAxDxHnrFiyZ80" alt="">
+        </div>
+    </div>
+  </div>
+  <div class="bottom2">
+    <div>
+        <h4>Women</h4>
+        <p>Tops</p>
+        <p>Ethnicwear</p>
+        <p>Bottoms</p>
+        <p>Dresses & Jumpsuits</p>
+        <p>Winterwear</p>
+        <p>Lingerie</p>
+        <p>Nightwear</p>
+        <p>Sportswear</p>
+        <p>Beauty</p>
+        <p>Watches & Sunglasses</p>
+    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 </body>
 </html>
